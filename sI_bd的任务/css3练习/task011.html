@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><!--lang="zh-cmn-Hans"-->
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--  SEO 优化
+    <meta name="keywords" content="your keywords">
+    <meta name="description" content="your description">
+    <meta name="author" content="author,email address">
+-->
+    <title>task011 CSS3 news</title>
+    <style type="text/css">
+        table tr{
+            text-align: center;
+            height: 30px;
+        }
+        table th,table td{
+            width: 100px;
+        }   
+        table tr:nth-child(2n-1){
+            background-color:darkseagreen;
+        }
+        table tr:first-child{
+            background-color:darksalmon;
+        }
+        table tr:nth-child(2),table tr:nth-child(3),table tr:nth-child(4){
+            color: red;
+            font-weight: 600;
+        }
+/**/
+        input{
+            margin:30px;
+            width: 100px;
+            height: 20px;
+            border: 1px solid darkseagreen;
+            transition: all 0.5s;
+        }
+        input:focus{
+            width: 150px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid coral;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+        }
+        #boxcell:target{
+            background-color: fuchsia;
+        }
+        #boxcell:target{
+            background-color:dodgerblue;
+        }
+        #boxcell:target{
+            background-color:dimgrey;
+        }
+    </style>
+</head>
+<body>
+ <div class="part1">
+        <p>汽车品牌牌行榜</p>  
+        <table>
+          <tr>
+              <th>排名</th>
+              <th>品牌</th>
+              <th>搜索指数</th>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>大众大众</td>
+              <td>45464253</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>丰田丰田</td>
+              <td>4546425</td>
+          </tr>
+           <tr>
+              <td>3</td>
+              <td>奥迪奥迪</td>
+              <td>4546425</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>大众</td>
+              <td>4546425</td>
+          </tr>
+          <tr>
+              <td>5</td>
+              <td>大众</td>
+              <td>4546425</td>
+          </tr>
+            <tr>
+              <td>6</td>
+              <td>大众</td>
+              <td>4546425</td>
+          </tr>
+            <tr>
+              <td>7</td>
+              <td>大众</td>
+              <td>4546425</td>
+          </tr>
+            <tr>
+              <td>8</td>
+              <td>大众</td>
+              <td>4546425</td>
+          </tr>
+          </table>
+</div>
+  <div class="part2">
+      <label for="fox">请输入:</label><input type="text" id="fox">
+</div> 
+<div class="box4" id="boxcell">
+    <a href="#boxcell">1</a>
+    <a href="#boxcell">2</a>
+    <a href="#boxcell">3</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>task010 flex（伸缩）布局</title>
+    <style type="text/css">
+        body,div{
+            margin: 15px 0;
+            padding: 0;
+        }
+        .box1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div[class^="item10"]{
+            width: 150px;
+            border: 1px solid red;
+        }
+        .item101{
+           height: 150px;
+        }
+         .item102{
+            height: 100px;
+        }
+         .item103{
+            height: 50px;
+        }
+         div .item104{
+            height: 250px;
+            border: 1px solid green;
+        }
+        @media screen and (max-width:670px){
+            .item104{
+                order:-1;
+            }
+        }
+/**/    
+        .box2{
+            display: flex;
+            width: 400px;
+            flex-flow: row wrap;
+            background-color:beige;
+        }
+        div[class^="item20"]{
+            margin: 0;
+            box-sizing: border-box;
+            height: 100px;
+            flex: 0 0 25%;
+            border: 1px solid red;
+        }
+/**/  
+        .box3{
+            display: flex;
+            height: 50vh;
+            flex-direction: column;
+        }
+        header,footer{
+            height: 50px;
+            background-color: bisque;
+        }
+        main{
+            flex: 1;
+            background-color: burlywood;
+        }
+/**/       
+        .box4{
+            display: flex;
+            height: 150px;
+            flex: 1;
+        }  
+        div[class^="item40"]{
+            border: 1px solid;
+        }
+        .item401{
+            flex: 0 0 25%;
+        }
+        .item402{
+            flex: 0 0 50%;
+        }
+        .item403{
+            flex: 0 0 25%;
+        }
+        .item404{
+            flex: 0 0 60%;
+        }
+        .item405{
+            flex: 1;
+        }
+        .item406{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="item101">1</div>
+    <div class="item102">2</div>
+    <div class="item103">3</div>
+    <div class="item104">4</div>
+</div>
+    
+    
+<div class="box2"><!--流式布局-->
+    <div class="item201">1</div>
+    <div class="item202">2</div>
+    <div class="item203">3</div>
+    <div class="item204">4</div>
+    <div class="item205">5</div>
+    <div class="item206">6</div>
+    <div class="item207">7</div>
+</div>
+<div class="box3">
+    <header></header>
+    <main></main>
+    <footer></footer>
+</div>
+<div class="box4">
+    <div class="item401"></div>
+    <div class="item402"></div>
+    <div class="item403"></div>
+</div>
+<div class="box4">
+    <div class="item404"></div>
+    <div class="item405"></div>
+    <div class="item406"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="../lib/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+    <title>bootstrap 3</title>
+</head>
+<body>
+
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+         <div class="navbar-header">
+          <botton class="navbar-toggle" data-toggle="collapse" data-target="#responsive-navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </botton>
+           <a href="#" class="navbar-brand"><strong>ninghao</strong>.net</a>
+             </div>
+             <div class="collapse navbar-collapse" id="responsive-navbar">
+              <ul class="nav navbar-nav">
+              <li class="active"><a href="">课程</a></li>
+              <li><a href="">博客</a></li>
+              <li><a href="">手册</a></li>    
+           </ul>
+           <form action="" class="navbar-form navbar-left">
+               <input type="text" placeholder="搜索" class="form-control">
+               <button type="submit">
+                   <span class="glyphicon glyphicon-search">  
+                   </span>
+               </button>
+           </form>
+           <a href="" class="btn btn-primary btn-sm navbar-btn navbar-right hidden-xs" >订阅课程</a>
+           <div class="proflie navbar-right">
+                 <ul class="nav navbar-nav">
+                   <li><a href="" data-toggle="modal" data-target="#login-modal">登录</a></li>
+                   <li><a href="">注册</a></li>
+               </ul>
+               <p class="navbar-text hidden">您好，<a href="#" class="navbar-link">王浩春</a></p>
+             </div>
+          </div>
+         </div>
+       </nav>
+
+        <div class="modal fade" id="login-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <button class="close" data-dismiss="modal">&times;</button>
+                        <h4>用户登录</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>用户登录的表单</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <div class="carousel slide" id="slideshow" data-interval="2000" data-warp="true">
+           <ol class="carousel-indicators">
+               <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+               <li data-target="#slideshow" data-slide-to="1"></li>
+                <li data-target="#slideshow" data-slide-to="2"></li>
+           </ol>
+               
+                 <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../images/01.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>王力宏</h2>
+                        <p>我的盖世英雄</p>
+                    </div>
+                </div>
+                <div class="item">
+                     <img src="../images/02.jpg" alt="">
+                     <div class="carousel-caption">
+                         <h2>leehom wang</h2>
+                         <p>my hero</p>
+                     </div>
+                </div>
+                <div class="item">
+                     <img src="../images/03.jpg" alt="">
+                     <div class="carousel-caption">
+                         <h2>leehom wang</h2>
+                         <p>my super hero</p>
+                     </div>
+                </div>
+            </div>
+            <a href="#slideshow" data-slide="prev" class="left carousel-control">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#slideshow" data-slide="next" class="right carousel-control">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+            <div class="text-center" style="padding:20px;">
+                <div class="btn-group">
+                    <button class="btn btn-default prev-slide">
+                        <span class="glyphicon glyphicon-backward"></span>
+                    </button>
+                    <button class="btn btn-default play-and-stop">
+                         <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                    <button class="btn btn-default next-slide">
+                         <span class="glyphicon glyphicon-forward"></span>
+                    </button>
+                </div>
+         </div> 
+    <dl>
+         <dt>
+            <span class="divider"></span>
+        </dt>
+    </dl> 
+   <img data-src="holder.js/100px100?bg=000000"> 
+   <div style="height:700px;"> </div>
+    
+    
+   <script src="../lib/jquery-3.2.1.js"></script>
+   <script src="../lib/bootstrap.min.js"></script>
+  <script src="../lib/holder.min.js"></script>
+   <script src="bs-3.js"></script>
+   <script>
+//   $(function(){
+//       $('#login-modal').modal({
+//           show:false,
+//           backdrop:false
+//       });
+//   });
+       $(function(){
+         $('#slideshow').on('slide.bs.carousel',function(){
+           console.log('切换幻灯片');
+       });
+       $('#slideshow').on('slid.bs.carousel',function(){
+           console.log('切换完成');
+       });
+         });
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>task008 响应式网格（栅格化）布局</title>
+    <style type="text/css">
+        body,div{
+            margin: 0;padding: 0;
+        }
+        
+        .container{
+            width: 100%;
+            background-color:#eee;
+            border: 1px solid #999;
+            overflow: hidden;
+        }
+        .row{
+            width: 100%;
+        }
+        [class*="col"]{
+            box-sizing: border-box;
+            float: left;
+            padding: 10px;
+        }
+        .col-md-1{
+            width: 8.333333%;
+        }
+        .col-md-2{
+            width: 16.666666%;
+        }
+        .col-md-3{
+            width: 25%;
+        }
+        .col-md-4{
+            width: 33.333333%;
+        }
+        .col-md-5{
+            width: 41.666666%;
+        }
+        .col-md-6{
+            width: 50%;
+        }
+        .part{
+            background-color:bisque;
+            border: 1px solid #999;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width:768px){
+        .col-xs-1{
+            width: 8.333333%;
+        }
+        .col-xs-2{
+            width: 16.666666%;
+        }
+        .col-xs-3{
+            width: 25%;
+        }
+        .col-xs-4{
+            width: 33.333333%;
+        }
+        .col-xs-5{
+            width: 41.666666%;
+        }
+        .col-xs-6{
+            width: 50%;
+        } 
+        .col-xs-7{
+            width: 58.333333%;
+        }
+        .col-xs-8{
+            width: 66.666666%;
+        }
+        .col-xs-12{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-xs-6">
+        <div class="part"></div>  
+        </div>
+        <div class="col-md-4  col-xs-6">
+        <div class="part"></div>  
+        </div>
+        <div class="col-md-4  col-xs-12">
+        <div class="part"></div>  
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-3 col-xs-3">
+        <div class="part"></div>  
+        </div>
+        <div class="col-md-6 col-xs-6">
+        <div class="part"></div>  
+        </div>
+        <div class="col-md-3 col-xs-3">
+        <div class="part"></div>  
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-1 col-xs-2">
+        <div class="part"></div>  
+        </div>
+        <div class="col-md-1 col-xs-2">
+        <div class="part"></div>  
+        </div>
+        <div class="col-md-2 col-xs-8">
+        <div class="part"></div>
+        </div>
+        <div class="col-md-2 col-xs-3">
+        <div class="part"></div>  
+        </div>
+        <div class="col-md-6 col-xs-3">
+        <div class="part"></div> 
+        </div>
+    </div>
+</div>
+</body>
+</html>

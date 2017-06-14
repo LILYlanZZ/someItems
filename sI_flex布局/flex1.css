@@ -1,0 +1,44 @@
+/*声明父元素为flex容器*/
+body,ul,li{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    height: auto;
+    border: 1px solid #000;
+    list-style: none;
+    -webkit-justfy-content:space-around;
+    justify-content:space-around;
+     -webkit-align-items:stretch;
+    align-items: stretch; 
+    
+}
+li{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: 8px;
+    padding: 4px;
+    flex-grow: 1;
+   
+    
+}
+.l1{
+    height: 50px;
+}
+.l3{
+    height: 150px;
+}
+
+
+ul>li:nth-child(2n){
+    order: 1;  /*其它子项目默认order为0，数值越小越靠前*/
+    flex-shrink: 0; /*其它子项目默认flex-shrink为1，为1时，等比缩小，为0时，不缩小*/
+}
+
+#did{
+    width: 50%;
+    height: 100px;
+    background-color: coral;
+}

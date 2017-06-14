@@ -1,0 +1,40 @@
+body{
+    padding-top: 50px;
+  
+}
+img{
+    width:100%;
+}
+#wentext{
+    padding-top: 30px;
+}
+.navbar-inverse input[type="text"]{
+	background: #313131;
+    border: none;
+    color: #999;
+
+}
+.navbar-inverse .navbar-form {
+	position: relative;
+}
+
+.navbar-inverse button[type="submit"]{
+    position: absolute;
+    top:25%;
+    right:20px;
+    background: none;
+    border: none;
+	
+}
+@media(min-width: 768px){
+    .navbar-inverse button[type="submit"]{
+       top: 15%; 
+    }
+}
+.navbar-inverse .glyphicon-search{
+	color:#999;
+}	
+
+.proflie {
+	margin-right: 25px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="tab.css">
+    <title>tab 选项卡组件</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        body{padding: 100px; background-color: #323232; font-size: 12px;font-family: " 微软雅黑";}
+    </style>
+</head>
+<body>
+<div class="tab js-tab" data-config='{
+     "triggerType":"click",
+     "effect":"fade",
+     "invoke":1,
+     "auto":2000    
+ }'>
+    <ul class="tab-nav">
+        <li class="actived"><a href="javascript:void(0);">新闻</a></li>
+        <li><a href="#">娱乐</a></li>
+        <li><a href="#">电影</a></li>
+        <li><a href="#">科技</a></li>
+    </ul>
+
+    <div class="content-wrap">
+   <div class="content-item current"><img src="images/d5.jpg" alt=""></div> 
+   <div class="content-item"><img src="images/d2.jpg" alt=""></div> 
+   <div class="content-item"><img src="images/d3.jpg" alt=""></div> 
+   <div class="content-item"><img src="images/d4.jpg" alt=""></div> 
+   
+    </div>
+</div>
+<script src="jquery-3.2.1.js"></script>
+<script src="tab.js"></script>
+<script>
+$(function(){
+ var tab1 = new Tab($(".js-tab").eq(0));
+   
+/* //方法一
+  Tab.init($(".js-tab"));  */
+    
+/* //方法二， jq调用  
+$(".js-tab").tab().css("backgroundColor","red");*/
+});    
+
+</script>
+</body>
+</html>
