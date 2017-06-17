@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form method="">
+        <div>
+            <label for=""><span>会员名：</span><input type="text" class="text"/></label>
+            <p class="msg"></p>
+        </div>
+        <div><label for=""><span></span><b id="count">0个字符</b></label></div>
+        <div>
+            <label for=""><span>登录密码：</span><input type="password" class="text"/></label>
+            <p class="msg"></p>
+        </div>
+        <div class="d3"><label for=""><span></span><em class="active">弱</em><em>中</em><em>强</em></label></div>
+        <div class="d4">
+            <label for=""><span>确认密码：</span><input type="password" class="text" disabled=""></label>
+            <p class="msg"></p>
+        </div>
+       <div class="d5">
+           <label for=""><span>验证码：</span><input type="text" class="text" style="width:55px">
+           <img src="test.png" alt="">
+           <a href="javascript:;" title="重新获取验证码" class="changeImg"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shuaxin"></use></svg></a></label>
+      </div>
+       <div><input type="submit" class="submitBtn btn" value="同意协议并注册"></div>
+    </form>
+    
+    
+    
+    <script src="http://at.alicdn.com/t/font_pu44e7j4tiv8to6r.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

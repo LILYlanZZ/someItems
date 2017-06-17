@@ -1,0 +1,33 @@
+body,div,form,label,span,input,p,i,em,img,a,b{
+    margin: 0;
+    padding: 0;
+}
+.icon {
+       width: 1.2em; height: 1.2em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+}
+
+img{ border: 0;}
+input,select,img{vertical-align: middle;}
+input:focus{outline: none;}
+.btn{border: none 0}
+p{font-size: 14px; color: #777; text-indent: 0.5em;}
+form{width: 800px;height: 500px;margin: 100px;}
+form div {overflow: hidden;clear: both;}
+form div label{float: left;clear: both;}
+form div label .text{width:152px; height: 26px; padding: 0 2px;border: 1px solid #ccc;}
+form div label b{font-weight: normal;font-size: 12px; color: #ccc;visibility: hidden;}
+form div em{display: inline-block;font-size: 12px; text-align: center; color:#fff; vertical-align: middle;font-style: normal;width: 53px;height: 15px;line-height: 15px;background: #ffd066;}
+form div .active{background-color: #ff3300;}
+div span{display: inline-block;width:80px;text-align: right;}
+.submitBtn {
+	width: 135px;height: 33px;background-color: #FF6600; color: #fff; margin: 20px 0 0 80px;border: 1px solid #f30;}
+.changeImg {
+        width: 22px;height: 22px;display: inline-block;vertical-align: middle;color: #333;}
+.msg i{display: inline-block;vertical-align: middle;width: 25px;height: 20px;background-color: #ccc;}
+.d3{margin:3px 0 10px 0;}
+.d4{margin-bottom:20px;}
+.d5 label input{ width: 55px;}
+.d5 label img{ width: 100px;height: 30px;}
