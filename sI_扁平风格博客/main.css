@@ -39,12 +39,18 @@ nav ul li a,nav .logo a{
     height: inherit; 
     color: #fff;
 }
+nav ul li a:hover{
+   border-bottom: 5px solid #eee;
+}
+nav .logo a:hover{
+    border: 2px solid #eee;
+}
 nav .logo{
     float: left;
     margin-left: 20px;
 }
 #banner .inner{
-max-width: 300px;
+    max-width: 300px;
     text-align: center;
     margin: 0 auto;
     position: relative;
@@ -62,15 +68,6 @@ max-width: 300px;
     margin: 30px 0;
     letter-spacing: 1px;
 }
-button{
-    border: none;
-    background: #333;
-    color: #eee;
-    padding: 10px;
-}
-#banner button{
-    padding: 12px 28px;
-}
 #banner .inner .more{
     margin-top: 200px;
 }
@@ -80,12 +77,21 @@ button{
     letter-spacing: 1px;
   
 }
-#main-btn{
+#main-a{
+    text-decoration: none;
+    display: inline-block;
     padding: 14px 28px;
     font-size: 20px;
     letter-spacing: 2px;
-    border-radius: 8px;
+    border-radius: 6px;
+    color: #eee;
     background: #18a;
+    transition: all 0.5s;
+}
+#main-a:hover{
+    color:dimgrey;
+    background-color:beige;
+    border-radius: 25px;
 }
 .green-section {
     background: #089db0;
@@ -126,6 +132,7 @@ margin-top: 60px;
   
 }
 .article-preview{
+    height: 500px;
     background: rgba(24,24,24,0.8);
      color: aliceblue;
 }
@@ -230,6 +237,17 @@ ul.share-group{
 	display: inline-block;
     padding: 10px;
 }
+ul.share-group a{
+    color: aliceblue;
+    text-decoration:none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+ul.share-group a:hover{
+    color:black;
+    background-color:dimgray;
+}
 .copy{
     padding: 20px;
 }
@@ -239,4 +257,9 @@ ul.share-group{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+@media screen and (max-width 500px){
+    .article-preview{
+        height: 800px;
+    }
 }
